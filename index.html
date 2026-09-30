@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VOSC Activity-1 | Ludo Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <h1>🎲 Ludo Game</h1>
+
+        <div class="game-info">
+            <h2 id="turnText">Red's Turn</h2>
+
+            <div id="dice">🎲</div>
+
+            <button id="rollBtn">Roll Dice</button>
+            <button id="restartBtn">Restart</button>
+
+            <p id="message">Roll the dice to start!</p>
+        </div>
+
+        <div class="board">
+
+            <!-- RED HOME -->
+            <div class="home red-home">
+                <h2>RED</h2>
+
+                <div class="home-tokens">
+                    <button class="token red" data-player="0" data-token="0">1</button>
+                    <button class="token red" data-player="0" data-token="1">2</button>
+                    <button class="token red" data-player="0" data-token="2">3</button>
+                    <button class="token red" data-player="0" data-token="3">4</button>
+                </div>
+            </div>
+
+            <!-- GREEN HOME -->
+            <div class="home green-home">
+                <h2>GREEN</h2>
+
+                <div class="home-tokens">
+                    <button class="token green" data-player="1" data-token="0">1</button>
+                    <button class="token green" data-player="1" data-token="1">2</button>
+                    <button class="token green" data-player="1" data-token="2">3</button>
+                    <button class="token green" data-player="1" data-token="3">4</button>
+                </div>
+            </div>
+
+            <!-- BOARD PATH -->
+            <div class="path" id="path"></div>
+
+            <!-- YELLOW HOME -->
+            <div class="home yellow-home">
+                <h2>YELLOW</h2>
+
+                <div class="home-tokens">
+                    <button class="token yellow" data-player="2" data-token="0">1</button>
+                    <button class="token yellow" data-player="2" data-token="1">2</button>
+                    <button class="token yellow" data-player="2" data-token="2">3</button>
+                    <button class="token yellow" data-player="2" data-token="3">4</button>
+                </div>
+            </div>
+
+            <!-- BLUE HOME -->
+            <div class="home blue-home">
+                <h2>BLUE</h2>
+
+                <div class="home-tokens">
+                    <button class="token blue" data-player="3" data-token="0">1</button>
+                    <button class="token blue" data-player="3" data-token="1">2</button>
+                    <button class="token blue" data-player="3" data-token="2">3</button>
+                    <button class="token blue" data-player="3" data-token="3">4</button>
+                </div>
+            </div>
+
+            <!-- WINNER MESSAGE -->
+            <div id="winner"></div>
+
+        </div>
+
+        <div class="rules">
+
+            <h3>How to Play</h3>
+
+            <ul>
+                <li>🎲 Roll the dice.</li>
+                <li>6 is required to bring a token onto the board.</li>
+                <li>Click a highlighted token to move it.</li>
+                <li>Landing on an opponent sends their token home.</li>
+                <li>⭐ Star cells are safe cells.</li>
+                <li>Reach the finish to complete a token.</li>
+                <li>Complete all 4 tokens to win.</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
